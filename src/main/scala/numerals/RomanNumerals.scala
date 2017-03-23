@@ -7,7 +7,10 @@ object RomanNumerals {
       replaceAll("IIIII", "V").
       replaceAll("VV", "X").
       replaceAll("IIII", "IV").
-      replaceAll("VIV", "IX")
+      replaceAll("VIV", "IX").
+      replaceAll("XXXXXXXXXX", "C").
+      replaceAll("XXXXXXXXX", "XC").
+      replaceAll("XXXXX", "L").
+      replaceAll("XXXX", "XL")
   }
-
 }

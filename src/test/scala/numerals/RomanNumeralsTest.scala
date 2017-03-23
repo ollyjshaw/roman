@@ -62,7 +62,31 @@ class RomanNumeralsTest extends FlatSpec with Matchers{
   }
   "33" should "be XXXIII" in {
     val answer = RomanNumerals.convert(33)
-    answer shouldBe "XXIII"
+    answer shouldBe "XXXIII"
+  }
+  "49" should "be XLIX" in {
+    val answer = RomanNumerals.convert(49)
+    answer shouldBe "XLIX"
+  }
+  "50" should "be L" in {
+    val answer = RomanNumerals.convert(50)
+    answer shouldBe "L"
+  }
+  "89" should "be LXXXIX" in {
+    val answer = RomanNumerals.convert(89)
+    answer shouldBe "LXXXIX"
+  }
+  "90" should "be XC" in {
+    val answer = RomanNumerals.convert(90)
+    answer shouldBe "XC"
+  }
+  "99" should "be XCIX" in {
+    val answer = RomanNumerals.convert(99)
+    answer shouldBe "XCIX"
+  }
+  "100" should "be C" in {
+    val answer = RomanNumerals.convert(100)
+    answer shouldBe "C"
   }
 
 }
